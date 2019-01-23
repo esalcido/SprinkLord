@@ -1,0 +1,137 @@
+2019-01-07 23:45:55 INFO     turning on relay P8_8
+2019-01-07 23:46:01 INFO     turning on P8_8
+2019-01-07 23:46:01 INFO     turning off relay P8_8
+2019-01-07 23:46:04 INFO     turning off P8_8
+2019-01-07 23:46:04 INFO     turning on relay P8_9
+2019-01-07 23:46:10 INFO     turning on P8_9
+2019-01-07 23:46:10 INFO     turning off relay P8_9
+2019-01-07 23:46:13 INFO     turning off P8_9
+2019-01-07 23:46:13 INFO     End of Sprinkler program
+2019-01-07 23:50:42 INFO     turning on relay P8_8
+2019-01-07 23:50:48 INFO     turning on P8_8
+2019-01-07 23:50:48 INFO     turning off relay P8_8
+2019-01-07 23:50:51 INFO     turning off P8_8
+2019-01-07 23:50:51 INFO     turning on relay P8_9
+2019-01-07 23:50:57 INFO     turning on P8_9
+2019-01-07 23:50:57 INFO     turning off relay P8_9
+2019-01-07 23:51:00 INFO     turning off P8_9
+2019-01-07 23:51:00 INFO     End of Sprinkler program
+2019-01-08 00:05:51 INFO     turning on relay P8_8
+2019-01-08 00:05:57 INFO     turning on P8_8
+2019-01-08 00:05:58 INFO     turning off relay P8_8
+2019-01-08 00:06:01 INFO     turning off P8_8
+2019-01-08 00:06:01 INFO     turning on relay P8_9
+2019-01-08 00:06:07 INFO     turning on P8_9
+2019-01-08 00:06:07 INFO     turning off relay P8_9
+2019-01-08 00:06:10 INFO     turning off P8_9
+2019-01-08 00:06:10 INFO     End of Sprinkler program
+2019-01-08 00:08:08 INFO     turning on relay P8_8
+2019-01-08 00:08:14 INFO     turning on P8_8
+2019-01-08 00:08:14 INFO     turning off relay P8_8
+2019-01-08 00:08:17 INFO     turning off P8_8
+2019-01-08 00:08:17 INFO     turning on relay P8_9
+2019-01-08 00:08:23 INFO     turning on P8_9
+2019-01-08 00:08:23 INFO     turning off relay P8_9
+2019-01-08 00:08:26 INFO     turning off P8_9
+2019-01-08 00:08:26 INFO     End of Sprinkler program
+2019-01-08 00:10:41 INFO     turning on relay P8_8
+2019-01-08 00:10:47 INFO     turning on P8_8
+2019-01-08 00:10:47 INFO     turning off relay P8_8
+2019-01-08 00:10:50 INFO     turning off P8_8
+2019-01-08 00:10:50 INFO     turning on relay P8_9
+2019-01-08 00:10:56 INFO     turning on P8_9
+2019-01-08 00:10:56 INFO     turning off relay P8_9
+2019-01-08 00:10:59 INFO     turning off P8_9
+2019-01-08 00:10:59 INFO     End of Sprinkler program
+2019-01-08 00:22:34 INFO     turning on relay P8_8
+2019-01-08 00:22:40 INFO     turning on P8_8
+2019-01-08 00:22:40 INFO     turning off relay P8_8
+2019-01-08 00:22:43 INFO     turning off P8_8
+2019-01-08 00:22:43 INFO     turning on relay P8_9
+2019-01-08 00:22:49 INFO     turning on P8_9
+2019-01-08 00:22:49 INFO     turning off relay P8_9
+2019-01-08 00:22:52 INFO     turning off P8_9
+2019-01-08 00:22:52 INFO     End of Sprinkler program
+2019-01-08 00:32:46 INFO     turning on relay P8_8
+2019-01-08 00:32:52 INFO     turning on P8_8
+2019-01-08 00:32:52 INFO     turning off relay P8_8
+2019-01-08 00:32:55 INFO     turning off P8_8
+2019-01-08 00:32:55 INFO     turning on relay P8_9
+2019-01-08 00:33:01 INFO     turning on P8_9
+2019-01-08 00:33:01 INFO     turning off relay P8_9
+2019-01-08 00:33:04 INFO     turning off P8_9
+2019-01-08 00:33:04 INFO     End of Sprinkler program
+2019-01-11 19:35:36 INFO     turning on relay P8_8
+2019-01-11 19:35:43 INFO     turning on P8_8
+2019-01-11 19:35:43 INFO     turning off relay P8_8
+2019-01-11 19:35:46 INFO     turning off P8_8
+2019-01-11 19:35:46 INFO     turning on relay P8_9
+2019-01-11 19:35:52 INFO     turning on P8_9
+2019-01-11 19:35:52 INFO     turning off relay P8_9
+2019-01-11 19:35:55 INFO     turning off P8_9
+2019-01-11 19:35:55 INFO     End of Sprinkler program
+2019-01-12 09:43:08 INFO     turning on relay P8_8
+2019-01-12 09:43:14 INFO     turning on P8_8
+2019-01-12 09:43:14 INFO     turning off relay P8_8
+2019-01-12 09:43:17 INFO     turning off P8_8
+2019-01-12 09:43:17 INFO     turning on relay P8_9
+2019-01-12 09:43:23 INFO     turning on P8_9
+2019-01-12 09:43:23 INFO     turning off relay P8_9
+2019-01-12 09:43:26 INFO     turning off P8_9
+2019-01-12 09:43:26 INFO     End of Sprinkler program
+2019-01-12 10:00:54 INFO     turning on relay P8_8
+2019-01-12 10:01:00 INFO     turning on P8_8
+2019-01-12 10:01:00 INFO     turning off relay P8_8
+2019-01-12 10:01:03 INFO     turning off P8_8
+2019-01-12 10:01:03 INFO     turning on relay P8_9
+2019-01-12 10:01:09 INFO     turning on P8_9
+2019-01-12 10:01:09 INFO     turning off relay P8_9
+2019-01-12 10:01:12 INFO     turning off P8_9
+2019-01-12 10:01:12 INFO     End of Sprinkler program
+2019-01-12 18:47:20 INFO     turning on relay P8_8
+2019-01-12 18:47:26 INFO     turning on P8_8
+2019-01-12 18:47:26 INFO     turning off relay P8_8
+2019-01-12 18:47:29 INFO     turning off P8_8
+2019-01-12 18:47:29 INFO     turning on relay P8_9
+2019-01-12 18:47:35 INFO     turning on P8_9
+2019-01-12 18:47:35 INFO     turning off relay P8_9
+2019-01-12 18:47:38 INFO     turning off P8_9
+2019-01-12 18:47:38 INFO     End of Sprinkler program
+2019-01-12 18:49:34 INFO     turning on relay P8_8
+2019-01-12 18:49:40 INFO     turning on P8_8
+2019-01-12 18:49:40 INFO     turning off relay P8_8
+2019-01-12 18:49:43 INFO     turning off P8_8
+2019-01-12 18:49:43 INFO     turning on relay P8_9
+2019-01-12 18:49:49 INFO     turning on P8_9
+2019-01-12 18:49:49 INFO     turning off relay P8_9
+2019-01-12 18:49:52 INFO     turning off P8_9
+2019-01-12 18:49:52 INFO     End of Sprinkler program
+2019-01-12 18:51:47 INFO     turning on relay P8_8
+2019-01-12 18:51:53 INFO     turning on P8_8
+2019-01-12 18:51:53 INFO     turning off relay P8_8
+2019-01-12 18:51:56 INFO     turning off P8_8
+2019-01-12 18:51:56 INFO     turning on relay P8_9
+2019-01-12 18:52:02 INFO     turning on P8_9
+2019-01-12 18:52:02 INFO     turning off relay P8_9
+2019-01-12 18:52:05 INFO     turning off P8_9
+2019-01-12 18:52:05 INFO     End of Sprinkler program
+2019-01-12 18:52:58 INFO     turning on relay P8_8
+2019-01-12 18:53:04 INFO     turning on P8_8
+2019-01-12 18:53:04 INFO     turning off relay P8_8
+2019-01-12 18:53:07 INFO     turning off P8_8
+2019-01-12 18:53:07 INFO     turning on relay P8_9
+2019-01-12 18:53:13 INFO     turning on P8_9
+2019-01-12 18:53:13 INFO     turning off relay P8_9
+2019-01-12 18:53:16 INFO     turning off P8_9
+2019-01-12 18:53:16 INFO     End of Sprinkler program
+2019-01-12 20:37:31 INFO     weather is Rain
+2019-01-13 21:39:33 INFO     turning on relay P8_8
+2019-01-13 21:39:39 INFO     turning on P8_8
+2019-01-13 21:39:39 INFO     turning off relay P8_8
+2019-01-13 21:39:42 INFO     turning off P8_8
+2019-01-13 21:39:42 INFO     turning on relay P8_9
+2019-01-13 21:39:48 INFO     turning on P8_9
+2019-01-13 21:39:48 INFO     turning off relay P8_9
+2019-01-13 21:39:51 INFO     turning off P8_9
+2019-01-13 21:39:51 INFO     End of Sprinkler program
+2019-01-16 22:53:05 INFO     weather is Rain

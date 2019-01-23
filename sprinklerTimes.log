@@ -12580,3 +12580,9 @@ ConnectionError: HTTPConnectionPool(host='api.openweathermap.org', port=80): Max
 2019-01-22 16:50:57 INFO     turning off relay P8_9
 2019-01-22 16:59:05 INFO     Running job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 16:59:05 PST)" (scheduled at 2019-01-22 16:59:05.161320-08:00)
 2019-01-22 16:59:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:09:05 PST)" executed successfully
+2019-01-22 17:09:05 INFO     Running job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:09:05 PST)" (scheduled at 2019-01-22 17:09:05.161320-08:00)
+2019-01-22 17:09:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:19:05 PST)" executed successfully
+2019-01-22 17:19:05 INFO     Running job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:19:05 PST)" (scheduled at 2019-01-22 17:19:05.161320-08:00)
+2019-01-22 17:19:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:29:05 PST)" executed successfully
+2019-01-22 17:29:05 INFO     Running job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:29:05 PST)" (scheduled at 2019-01-22 17:29:05.161320-08:00)
+2019-01-22 17:29:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:39:05 PST)" executed successfully
