@@ -1,0 +1,195 @@
+
+
+
+{% load static %}
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/js/mdb.min.js"></script>
+
+<script type="text/javascript" src={% static "/polls/wickedpicker/dist/wickedpicker.min.js" %}></script>
+
+
+<!--jQuery knob -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+
+ <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+
+<script>
+  //for getting CSRF token
+function getCookie(name){
+  var cookieValue=null;
+    if(document.cookie && document.cookie !=''){
+      var cookies = document.cookie.split(';');
+      for(var i=0;i<cookies.length;i++){
+        var cookie = jQuery.trim(cookies[i]);
+
+      
+      if(cookie.substring(0,name.length+1)==(name+'=')){
+        cookieValue=decodeURIComponent(cookie.substring(name.length+1));
+        break;
+      }}
+    }
+  return cookieValue;
+}
+
+//when submit is clicked
+$("#submit").click(function(e){
+  e.preventDefault();
+
+  //prepare csrf token
+  var csrftoken = getCookie('csrftoken');
+
+  //collect data from fields
+  var email = $('#inputEmail').val();
+  var password = $('#inputPassword').val();
+
+  $.ajax({
+    //url: window.location.href,
+    url: '{% url "polls:station" %}',
+    type: 'POST',
+    data:{csrfmiddlewaretoken: csrftoken,
+      email:email,
+      password:password
+    },
+    success: function(json){
+      console.log(json);
+      alert('Hi ' + json['email']+'!.'+' you have entered password '+json['password']);
+      console.log("success");
+    },
+    error:function(xhr,errmsg,err){
+      console.log("error is here: "+xhr.status + ": "+xhr.responseText);
+    }
+  });
+
+
+});
+
+
+var station1 = $("#stn1");
+var station2 = $("#stn2");
+var stn1Pin = "P8_8";
+var stn2Pin = "P8_9";
+var timeDelay = 3 * (1000);//time in seconds
+
+station1.change(function(e){
+  
+  var switchStatus = false;
+  var csrftoken = getCookie('csrftoken');
+
+  if ($(this).is(':checked')) {
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn1Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station1.bootstrapToggle('off');
+        ajaxCall(stn1Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn1Pin,0,e,csrftoken);
+    }
+
+
+});
+
+
+station2.change(function(e){
+ var switchStatus = false;
+ var csrftoken = getCookie('csrftoken');
+
+if ($(this).is(':checked')) {
+       
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn2Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station2.bootstrapToggle('off');
+        ajaxCall(stn2Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+      switchStatus = $(this).is(':checked');      
+      ajaxCall(stn2Pin,0,e,csrftoken);
+    }
+
+});
+
+
+
+function ajaxCall(stn, state,e,csrftoken){
+ e.preventDefault();
+    //var csrftoken = getCookie('csrftoken');
+    $.ajax({
+      url: '{% url "polls:station" %}',
+      type:'POST',
+      data:{csrfmiddlewaretoken : csrftoken,
+        stn:stn,
+        state:state
+      },
+      success: function(json){
+        console.log(json);
+        console.log("success");
+      }
+    });
+
+}
+// $('#input_starttime').pickatime({
+//     // 12 or 24 hour
+//     twelvehour: true,
+// });
+</script>
+
+<script>
+  $('.timepicker').wickedpicker();
+</script>
+<script type="text/javascript">
+  $('.dial').knob();
+</script>
+
+</body></html>
