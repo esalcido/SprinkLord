@@ -135,3 +135,12 @@
 2019-01-13 21:39:51 INFO     turning off P8_9
 2019-01-13 21:39:51 INFO     End of Sprinkler program
 2019-01-16 22:53:05 INFO     weather is Rain
+2019-03-24 19:41:42 INFO     turning on relay P8_8
+2019-03-24 19:41:48 INFO     turning on P8_8
+2019-03-24 19:41:48 INFO     turning off relay P8_8
+2019-03-24 19:41:51 INFO     turning off P8_8
+2019-03-24 19:41:51 INFO     turning on relay P8_9
+2019-03-24 19:41:57 INFO     turning on P8_9
+2019-03-24 19:41:57 INFO     turning off relay P8_9
+2019-03-24 19:42:00 INFO     turning off P8_9
+2019-03-24 19:42:00 INFO     End of Sprinkler program

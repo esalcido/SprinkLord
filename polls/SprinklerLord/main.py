@@ -4,6 +4,7 @@
 from Station import *
 from Schedule import *
 import logging
+from SoilHygrometer import *
 # This will import the sleep function for the timer below.
 from time import sleep
 import requests
@@ -48,4 +49,10 @@ if (weather == "Rain") or (weather =="Light Rain"):
 else:
 	#create schedule to run through all stations
 	schl = Schedule(durationInMin, holder)
-	schl.runSchedule()
+	#schl.runSchedule()
+
+soilMeter = SoilHygrometer("P9_39")
+soilMeter.setup()
+reading = soilMeter.read()
+
+print ("soil level is "+ str(reading)) 
