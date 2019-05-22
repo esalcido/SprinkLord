@@ -12586,3 +12586,271 @@ ConnectionError: HTTPConnectionPool(host='api.openweathermap.org', port=80): Max
 2019-01-22 17:19:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:29:05 PST)" executed successfully
 2019-01-22 17:29:05 INFO     Running job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:29:05 PST)" (scheduled at 2019-01-22 17:29:05.161320-08:00)
 2019-01-22 17:29:05 INFO     Job "update_forecast (trigger: interval[0:10:00], next run at: 2019-01-22 17:39:05 PST)" executed successfully
+2019-05-22 00:00:35 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:00:35 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:01:14 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:01:14 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:01:20 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:01:20 ERROR    Invalid HTTP_HOST header: '192.168.1.80:8000'. You may need to add u'192.168.1.80' to ALLOWED_HOSTS.
+2019-05-22 00:01:46 WARNING  Not Found: /
+2019-05-22 00:01:46 WARNING  Not Found: /favicon.ico
+2019-05-22 00:02:50 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:51 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:52 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:53 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:53 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:54 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:55 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:55 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:58 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:02:58 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:43 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:43 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:43 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:43 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:44 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:46 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:05:46 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:08:47 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:08:52 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined
+2019-05-22 00:08:52 ERROR    Internal Server Error: /polls/station/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/edward/Sprinklord/polls/views.py", line 112, in station
+    stn = Station("Station 1",station)
+  File "/home/edward/Sprinklord/polls/SprinklerLord/Station.py", line 8, in __init__
+    Relay.__init__(self, pinNum)
+NameError: global name 'Relay' is not defined

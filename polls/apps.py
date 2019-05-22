@@ -10,7 +10,7 @@ class PollsConfig(AppConfig):
 	def ready(self):
 		print "at polls config."
 		from polls.forecastUpdater import updater	
-		updater.start()
+		#updater.start()
 
 		from polls.SprinklerLord import waterSchedule
-		waterSchedule.start()
+		#waterSchedule.start()

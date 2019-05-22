@@ -17,7 +17,7 @@ from django.urls import reverse
 from django.views import generic
 from django.views.generic import TemplateView
 #from django.utils import timezone
-import Adafruit_BBIO.GPIO as GPIO
+#import Adafruit_BBIO.GPIO as GPIO
 from time import sleep
 from SprinklerLord.Station import Station
 
