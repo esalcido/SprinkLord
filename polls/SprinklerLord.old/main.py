@@ -5,18 +5,12 @@ from Station import *
 from Schedule import *
 import logging
 from SoilHygrometer import *
-
 # This will import the sleep function for the timer below.
 from time import sleep
 import requests
 import json
 
-logging.basicConfig(filename='/home/debian/sprinklerOOP-Shrubs.log',format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO,datefmt='%Y-%m-%d %H:%M:%S')
-
-#get soil moisture reading
-soilMeter = SoilHygrometer("P9_39")
-soilMeter.setup()
-reading = soilMeter.read()
+logging.basicConfig(filename='sprinklerOOP.log',format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO,datefmt='%Y-%m-%d %H:%M:%S')
 
 #Duration 
 durationInMin = 8 * 60
@@ -31,6 +25,8 @@ holder = {pinNum:Station(name = pinNum,pinNum=pinNum) for pinNum in relays}
 for  x in holder:
 	holder[x].setup()
 	print("Station name is "+holder[x].name +". Station pinNum is "+holder[x].pinNum)
+
+
 
 # This is a timer that will pause for 1 second.
 sleep(1)
@@ -50,9 +46,16 @@ print "weather is "+ str(weather)
 
 if (weather == "Rain") or (weather =="Light Rain"):
 	logging.info('weather is '+ str(weather) )
-	logging.info('Soil Moisture: ' + str(reading) )
 else:
 	#create schedule to run through all stations
-	logging.info('Soil Moisture: ' + str(reading) )
 	schl = Schedule(durationInMin, holder)
-	schl.runSchedule()
+	try:
+		schl.runSchedule()
+	except KeyboardInterrupt:
+		print 'program ended'
+
+soilMeter = SoilHygrometer("P9_39")
+soilMeter.setup()
+reading = soilMeter.read()
+
+print ("soil level is "+ str(reading)) 

@@ -40,7 +40,7 @@
       </div>
     </div><!-- #Weather data panel -->
 
-    <div class="row"><!-- Station panel -->
+    <div class="row m-2"><!-- Station panel 1-->
       <div class="col">
 
         <div class="card" >
@@ -50,7 +50,7 @@
              {% csrf_token %}
              <div class="form-group" >
               <h5 class="card-title">Station 1</h5>
-              <p class="card-text">werfpoj wer ipjg peork </p>
+              <p class="card-text">Front Window</p>
               <!-- <button type="button" id="stn1" class="btn btn-danger">Off</button> -->
               <input id="stn1" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
             </div>
@@ -68,7 +68,7 @@
            {% csrf_token %}
            <div class="form-group">
             <h5 class="card-title">Station 2</h5>
-            <p class="card-text">werfpoj wer ipjg peork </p>
+            <p class="card-text">Side of House </p>
             <!-- <button type="button" id="stn2" class="btn btn-danger">Off</button> -->
             <input id="stn2" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
           </div>
@@ -76,14 +76,92 @@
       </div>
     </div>
   </div>
-</div><!--#station panel-->
+</div><!--#station panel 1-->
+
+
+<div class="row m-2"><!-- Station panel 2-->
+      <div class="col">
+
+        <div class="card" >
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <form class="form-signin" method="POST" >
+             {% csrf_token %}
+             <div class="form-group" >
+              <h5 class="card-title">Station 3</h5>
+              <p class="card-text">Front Yard 1</p>
+              <!-- <button type="button" id="stn1" class="btn btn-danger">Off</button> -->
+              <input id="stn3" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" >
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+
+         <form class="form-signin" method="POST" >
+           {% csrf_token %}
+           <div class="form-group">
+            <h5 class="card-title">Station 4</h5>
+            <p class="card-text">Front Yard 2</p>
+            <!-- <button type="button" id="stn2" class="btn btn-danger">Off</button> -->
+            <input id="stn4" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!--#station panel 2-->
+
+
+<div class="row m-2"><!-- Station panel 3-->
+      <div class="col">
+
+        <div class="card" >
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <form class="form-signin" method="POST" >
+             {% csrf_token %}
+             <div class="form-group" >
+              <h5 class="card-title">Station 5</h5>
+              <p class="card-text">Back Yard 1</p>
+              <!-- <button type="button" id="stn1" class="btn btn-danger">Off</button> -->
+              <input id="stn5" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" >
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+
+         <form class="form-signin" method="POST" >
+           {% csrf_token %}
+           <div class="form-group">
+            <h5 class="card-title">Station 6</h5>
+            <p class="card-text">Back Yard 2</p>
+            <!-- <button type="button" id="stn2" class="btn btn-danger">Off</button> -->
+            <input id="stn6" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!--#station panel 3-->
 
 <br>
 <div class="card" >
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body">
-    <h2 class="card-title">Schedule</h2>
-    <div class="row mb-4">
+    <h2 class="card-title" data-toggle="collapse" data-target="#schedule">Schedule</h2>
+    <div id="schedule" class="row mb-4 collapse">
       <div class='col-sm-6 card-text' id="start-time" >
         <h3>Start Time</h3>
         <p>Enter the time of day you would like the sprinklers to run.</p>

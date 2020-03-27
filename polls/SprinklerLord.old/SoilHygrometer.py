@@ -14,3 +14,9 @@ class SoilHygrometer:
 		return result
 
 
+#sensor_pin = "P9_39"
+#ADC.setup()
+
+#reading = ADC.read(sensor_pin)
+
+

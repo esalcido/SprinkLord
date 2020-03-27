@@ -1,29 +1,29 @@
 #!/usr/bin/env python
-#Created by Edward Salcido 11/27/2018
+#Created by Edward Salcido 3/17/2020
 #from Relay import *
 from Station import *
 from Schedule import *
 import logging
-from SoilHygrometer import *
+#from SoilHygrometer import *
 
 # This will import the sleep function for the timer below.
 from time import sleep
 import requests
 import json
 
-logging.basicConfig(filename='/home/debian/sprinklerOOP-Shrubs.log',format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO,datefmt='%Y-%m-%d %H:%M:%S')
+logging.basicConfig(filename='/home/debian/sprinklerOOP-FrontYard.log',format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO,datefmt='%Y-%m-%d %H:%M:%S')
 
 #get soil moisture reading
-soilMeter = SoilHygrometer("P9_39")
-soilMeter.setup()
-reading = soilMeter.read()
+# soilMeter = SoilHygrometer("P9_39")
+# soilMeter.setup()
+#reading = soilMeter.read()
 
 #Duration 
 durationInMin = 8 * 60
-#durationInMin = 5
+#durationInMin = 10
 
 #set up the relay objects
-relays= ["P8_8","P8_9"]
+relays= ["P8_10","P8_11","P8_12","P8_13"]
 
 #use a dictionary comprehension to create Stations
 holder = {pinNum:Station(name = pinNum,pinNum=pinNum) for pinNum in relays}
@@ -50,9 +50,9 @@ print "weather is "+ str(weather)
 
 if (weather == "Rain") or (weather =="Light Rain"):
 	logging.info('weather is '+ str(weather) )
-	logging.info('Soil Moisture: ' + str(reading) )
+	# logging.info('Soil Moisture: ' + str(reading) )
 else:
 	#create schedule to run through all stations
-	logging.info('Soil Moisture: ' + str(reading) )
+	# logging.info('Soil Moisture: ' + str(reading) )
 	schl = Schedule(durationInMin, holder)
 	schl.runSchedule()

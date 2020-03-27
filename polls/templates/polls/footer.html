@@ -112,9 +112,20 @@ $("#submit").click(function(e){
 
 var station1 = $("#stn1");
 var station2 = $("#stn2");
+var station3 = $("#stn3");
+var station4 = $("#stn4");
+var station5 = $("#stn5");
+var station6 = $("#stn6");
+
+
 var stn1Pin = "P8_8";
 var stn2Pin = "P8_9";
-var timeDelay = 3 * (1000);//time in seconds
+var stn3Pin = "P8_10";
+var stn4Pin = "P8_11";
+var stn5Pin = "P8_12";
+var stn6Pin = "P8_13";
+
+var timeDelay = 60 * (1000);//time in seconds
 
 station1.change(function(e){
   
@@ -160,7 +171,89 @@ if ($(this).is(':checked')) {
 
 });
 
+station3.change(function(e){
+ var switchStatus = false;
+ var csrftoken = getCookie('csrftoken');
 
+if ($(this).is(':checked')) {
+       
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn3Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station3.bootstrapToggle('off');
+        ajaxCall(stn3Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+      switchStatus = $(this).is(':checked');      
+      ajaxCall(stn3Pin,0,e,csrftoken);
+    }
+
+});
+
+station4.change(function(e){
+ var switchStatus = false;
+ var csrftoken = getCookie('csrftoken');
+
+if ($(this).is(':checked')) {
+       
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn4Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station4.bootstrapToggle('off');
+        ajaxCall(stn4Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+      switchStatus = $(this).is(':checked');      
+      ajaxCall(stn4Pin,0,e,csrftoken);
+    }
+
+});
+
+station5.change(function(e){
+ var switchStatus = false;
+ var csrftoken = getCookie('csrftoken');
+
+if ($(this).is(':checked')) {
+       
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn5Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station5.bootstrapToggle('off');
+        ajaxCall(stn5Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+      switchStatus = $(this).is(':checked');      
+      ajaxCall(stn5Pin,0,e,csrftoken);
+    }
+
+});
+
+station6.change(function(e){
+ var switchStatus = false;
+ var csrftoken = getCookie('csrftoken');
+
+if ($(this).is(':checked')) {
+       
+        switchStatus = $(this).is(':checked');
+        ajaxCall(stn6Pin,1,e,csrftoken);
+
+        //turn off after set amount of time
+        setTimeout(function(){
+        station6.bootstrapToggle('off');
+        ajaxCall(stn6Pin,0,e,csrftoken)},timeDelay);
+    }
+    else {
+      switchStatus = $(this).is(':checked');      
+      ajaxCall(stn6Pin,0,e,csrftoken);
+    }
+
+});
 
 function ajaxCall(stn, state,e,csrftoken){
  e.preventDefault();

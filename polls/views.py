@@ -24,8 +24,8 @@ from SprinklerLord.Station import Station
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic.edit import CreateView
 
-from apscheduler.schedulers.background import BackgroundScheduler
-from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
+#from apscheduler.schedulers.background import BackgroundScheduler
+#from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 from polls.forecastUpdater import updater
 
 from .forms import QuestionForm

@@ -25,7 +25,7 @@ SECRET_KEY = '1)-b72u9%8j1wz92np2#kkdd#qgrs%7e5#!02en!m!_zqf)%w#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.113']
+ALLOWED_HOSTS = ['192.168.1.74']
 
 
 # Application definition
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_apscheduler',
     'polls.apps.PollsConfig',
 ]
 
@@ -123,3 +122,22 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 APSCHEDULER_DATETIME_FORMAT =  "N j, Y, f:s a"  # Default
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'my_log_handler': {
+            'level': 'DEBUG' if DEBUG else 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'django.log'),
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['my_log_handler'],
+            'level': 'DEBUG' if DEBUG else 'INFO',
+            'propagate': True,
+        },
+    },
+}

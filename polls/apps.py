@@ -12,5 +12,5 @@ class PollsConfig(AppConfig):
 		from polls.forecastUpdater import updater	
 		updater.start()
 
-		from polls.SprinklerLord import waterSchedule
-		waterSchedule.start()
+		#from polls.SprinklerLord import waterSchedule
+		#waterSchedule.start()

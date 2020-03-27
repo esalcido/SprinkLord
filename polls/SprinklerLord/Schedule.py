@@ -4,7 +4,7 @@ from Station import Station
 import logging
 # This will import the sleep function for the timer below.
 from time import sleep
-from apscheduler.schedulers.background import BackgroundScheduler
+#from apscheduler.schedulers.background import BackgroundScheduler
 
 class Schedule:
 
